@@ -1,0 +1,59 @@
+Íme egy részletes, lépésről lépésre követhető magyar nyelvű feladatleírás és magyarázat, amely a CSS dobozmodell (Box Model) alapjaira épül. Ezt a leírást egy kezdő is könnyen megérti, és ez alapján önállóan be tudja állítani a fenti CSS kód utasításait.
+
+Feladatleírás: CSS Box Modell (Dobozmodell) beállításai
+A CSS-ben minden egyes elem (szöveg, kép, címsor) egy-egy láthatatlan vagy látható dobozként viselkedik. A dobozmodell négy fő részből áll: maga a tartalom (content), a tartalom körüli belső margó (padding), a dobozt lezáró szegély (border), és a többi elemtől való távolságot biztosító külső margó (margin).
+
+1. Globális alapozás és az oldal törzse (body)
+Globális dobozméretezés (*): Minden elemre érvényesítsd a box-sizing: border-box; szabályt. Ez biztosítja, hogy ha egy elemnek megadod a szélességét, a szegélyek és a belső margók ne növeljék meg magát a dobozt, hanem „befelé” számítódjanak.
+
+Az oldal dobozának méretei és helyzete (body):
+
+Korlátozd a maximális szélességét 800px-re (max-width).
+
+A jobb és bal oldali külső margót állítsd automatikusra (margin-left: auto; margin-right: auto;), így az egész tartalom vízszintesen középre fog igazodni a képernyőn.
+
+Az oldal belső margói (body): * Biztosíts felül és alul 20px belső távolságot (padding-top, padding-bottom), jobb és bal oldalon pedig 30px belső távolságot (padding-left, padding-right), hogy a szöveg ne érjen hozzá közvetlenül a kerethez.
+
+Az oldal kerete (body): * Adj a fő doboznak egy 1px vastagságú (border-width), folytonos stílusú (border-style: solid) szegélyt, a sarkait pedig kerekítsd le 6px sugárral (border-radius).
+
+2. Címsorok dobozai és egyedi szegélyei (h1, h2, h3)
+Főcímsor (h1): * Állíts be neki egy világos kékes-lila háttérszínt az rgb(193, 193, 216) kóddal, és adj neki egy minden oldalon 10px széles belső margót (padding), hogy a háttérszín ne tapadjon rá a betűkre.
+
+Másodlagos címsor (h2):
+
+Különleges szegély: Csak a bal oldalára tegyél egy vastag, 5px-es folytonos szegélyt (border-left-width, border-left-style: solid), az aljára pedig egy vékony, 1px-es szaggatott szegélyt (border-bottom-width, border-bottom-style: dashed).
+
+Belső margó: A bal oldali vastag vonaltól tartsd el a szöveget 12px-re (padding-left), az alsó szaggatott vonaltól pedig 6px-re (padding-bottom).
+
+Külső margó: Hogy a szakaszok szépen elváljanak, a címsor felett hagyj 40px szabad helyet (margin-top), az alatta lévő tartalom előtt pedig 20px helyet (margin-bottom).
+
+Harmadlagos címsor (h3):
+
+Szegély: Csak egy alsó, 2px vastag, pontozott szegélyt kapjon (border-bottom-width, border-bottom-style: dotted).
+
+Margók: Az alsó szegélytől 4px belső távolságot tarts (padding-bottom). Felülről 30px, alulról 15px külső margót alkalmazz (margin-top, margin-bottom).
+
+Szélesség: Korlátozd a doboz maximális szélességét 200px-re (max-width), hogy a pontozott vonal ne nyúljon végig a teljes oldalon.
+
+3. Bekezdések és listák elhelyezése (p, ul, ol)
+Bekezdések (p): A bekezdések felső külső margója legyen 0, az alsó külső margója pedig 18px, így a szövegblokkok közt állandó távolság alakul ki.
+
+Listák (ul, ol): A listák dobozainál is töröld a felső margót (0), az alsó külső margót állítsd be 25px-re. Adj hozzá egy 25px-es bal oldali belső margót (padding-left), ez ad helyet a listajeleknek (pöttyöknek, számoknak), hogy ne lógjanak ki a fő dobozból.
+
+4. Kép formázása a dobozmodellben (img)
+Megjelenítés módja: Módosítsd a kép alapértelmezett viselkedését blokk szintűre (display: block). Ez szükséges ahhoz, hogy a külső margók megfelelően működjenek rajta.
+
+Méretezés: A maximális szélessége legyen 100%, a magassága pedig automatikus (height: auto), így a kép rugalmasan alkalmazkodik az oldal szélességéhez, de nem torzul el.
+
+Keret és sarok: Adj neki egy 4px vastag, folytonos szegélyt (border-width, border-style: solid), a sarkait pedig látványosan kerekítsd le 15px sugárral (border-radius).
+
+Belső margó: Minden oldalon kapjon 8px belső távolságot (padding-top/bottom/left/right), ami egyfajta fotókeret-hatást kelt a szegély és a fotó között.
+
+Középre igazítás: A felső és alsó külső margója legyen 30px, a jobb és bal oldali külső margója pedig legyen automatikus (margin-left: auto; margin-right: auto;), ami pontosan középre igazítja a képet.
+
+5. Linkek dobozának kezelése (a)
+Alap és meglátogatott állapot (a:link, a:visited): * A megszokott aláhúzás helyett használj alsó szegélyt: legyen 1px vastag és szaggatott stílusú (border-bottom-width, border-bottom-style: dashed).
+
+Növeld meg a link kattintható területét egy minimális belső margóval: alul-felül 2px, jobb és bal oldalon 4px legyen (padding-top/bottom és padding-left/right).
+
+Egérrel való rámutatás (a:hover): * Amikor a felhasználó az egérrel a link fölé viszi a kurzort, a szaggatott alsó szegély váltson át folytonos stílusúra (border-bottom-style: solid), és a link kapjon egy minimális, 4px-es saroklekerekítést (border-radius).

@@ -1,0 +1,16 @@
+/* 2. feladat: A "kiemelt" osztályú elemek formázása világoskék háttérrel */
+.kiemelt {
+    background-color: lightblue;
+}
+
+/* 5. feladat: A "jellemzo" azonosítójú elem formázása lila háttérrel */
+#jellemzo {
+    background-color: purple;
+    color: white; /* Opcionális: fehér szöveg a jobb olvashatóságért */
+}
+
+/* 5. feladat: A "fajta" azonosítójú elem formázása zöld háttérrel */
+#fajta {
+    background-color: green;
+    color: white; /* Opcionális: fehér szöveg a jobb olvashatóságért */
+}

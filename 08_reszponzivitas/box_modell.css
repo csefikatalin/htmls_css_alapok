@@ -1,0 +1,132 @@
+/* ==========================================
+   KIZÁRÓLAG BOX MODELL UTASÍTÁSOK
+   ========================================== */
+
+/* Globális Box-Sizing beállítás */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Doboz méretei és elhelyezkedése */
+    max-width: 800px;  
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Belső távolságok */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    /* Szegélyek és lekerekítés */
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+}
+
+/* ==========================================
+   CÍMSOROK DOBOZAI ÉS SZEGÉLYEI
+   ========================================== */
+
+h1 {
+    background-color: rgb(193, 193, 216);
+    padding: 10px;
+}
+
+h2 {
+    /* Csak bal oldali és alsó szegély használata */
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    
+    /* Belső margók a szegélyektől való távolsághoz */
+    padding-left: 12px;
+    padding-bottom: 6px;
+    
+    /* Külső margók a szakaszok elszeparálásához */
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    /* Csak alsó, pontozott szegély */
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    
+    /* Belső és külső margó */
+    padding-bottom: 4px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    
+    /* Doboz maximális szélességének korlátozása */
+    max-width: 200px;
+}
+
+/* ==========================================
+   SZÖVEGEK ÉS LISTÁK DOBOZAI
+   ========================================== */
+
+p {
+    /* Külső alsó margó a bekezdések távolságához */
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+ul, ol {
+    /* Listadobozok margói */
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-left: 25px; /* Hely biztosítása a listajeleknek */
+}
+
+
+/* ==========================================
+   KÉP BOX MODELL FORMÁZÁSA
+   ========================================== */
+
+img {
+    /* Megjelenítési mód a margók megfelelő kezeléséhez */
+    display: block;
+    
+    /* Méretezés */
+    max-width: 100%;
+    height: auto;
+    
+    /* Szegély és határozott lekerekítés */
+    border-width: 4px ;
+    border-style: solid;
+    border-radius: 15px;
+    
+    /* Belső margó (kerethatás a kép körül) */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+    /* Külső margók: alul-felül fix távolság, jobb-bal auto (középre igazítás) */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================
+   LINKEK DOBOZ MODELL JELLEMZŐI
+   ========================================== */
+
+a:link, a:visited {
+    /* Alsó szegély használata aláhúzás helyett */
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    
+    /* Kicsi belső margó a kattintható terület növelésére */
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+a:hover {
+    /* Egérrel való rámutatáskor a szegély st

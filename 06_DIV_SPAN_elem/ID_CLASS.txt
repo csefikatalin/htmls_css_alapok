@@ -1,0 +1,8 @@
+Helyezz el az index.html oldalon id és class attribútumokat. 
+
+1. Minden második li-taget lásd el "kiemelet" classnévvel <li class="kiemelt"><...li>
+2. Formázd meg css-sel a "kiemelt" osztályt! legyen a hátterük világoskék!
+3. A hódok jellemzői címhez adj egy id-t, "jellemzo" néven.
+4. A hódok fajtái címhez adj egy id-t, "fajta" néven.
+5. Formázd a css-ben lila hátérrel a jellemzo-t és zöld hátérrel a fajta-t!
+6. Készíts menüt, ami az oldalon a fajta és a jellemző részekhez navigál!

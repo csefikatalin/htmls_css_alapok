@@ -1,0 +1,76 @@
+/* ==========================================
+   ALAP TEXT ÉS FONT FORMÁZÁSOK
+   ========================================== */
+
+body {
+    /* Betűtípuscsalád beállítása (ha az első nem elérhető, a következőt nézi) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 11pt;                                              /* Alapértelmezett betűméret */
+    line-height: 1.6;                                             /* Sorköz a kényelmes olvashatóságért */
+    color: #2c3e50;                                               /* Lágy sötétszürke szövegszín a nyers fekete helyett */
+    background-color: #f4f7f6;                                    /* Nagyon halvány, természetes szürkés-zöldes háttér */
+    
+    /* Az oldal elrendezése: maximum 800px széles, és vízszintesen középre zárt */
+    max-width: 800px;                                             
+    margin: 40px auto;                                            
+    padding: 0 20px;                                              /* Oldalsó belső margó mobilnézethez */
+}
+
+/* Címsorok egyedi formázása */
+h1 {
+    font-family: 'Georgia', serif;                                /* A főcím legyen elegáns, talpas betűtípus */
+    color: #1a4332;                                               /* Mély erdőzöld szín */
+    font-size: 24pt;
+ letter-spacing: 2px;
+}
+
+h2 {
+    color: #2e6f40;                                               /* Világosabb zöld a szakaszcímeknek */
+    font-size: 16pt;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 13pt;
+    font-style: italic;                                           /* Dőlt betűstílus a harmadrangú címsornak */
+}
+
+/* Listaelemek közötti térköz növelése */
+li {
+    margin-bottom: 8px;                                           
+}
+
+/* Kép formázása  */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+   
+}
+
+/* ==========================================
+   LINKEK (HIVATKOZÁSOK) ÁLLAPOTAI
+   ========================================== */
+
+/* Alapértelmezett és már meglátogatott link állapot */
+a:link, a:visited {
+    color: #a0522d;                                               /* Meleg hód-barna szín */
+    text-decoration: none;                                        /* Alapból levesszük a teljes aláhúzást */
+    font-weight: bold;                                            /* Vastagított szöveg */
+    border-bottom: 1px dashed #a0522d;                            /* Elegáns szaggatott alsó vonal */
+                                   /* Animált, sima átmenet a hover állapothoz */
+}
+
+/* Hover állapot (amikor az egér felette van) */
+a:hover {
+    color: #d2691e;                                               /* Világosabb, élénkebb barna szín */
+    border-bottom: 1px solid #d2691e;                             /* A szaggatott vonal folytonossá válik */
+    background-color: #fef5e7;                                    /* Nagyon halvány háttérkiemelés a link mögött */
+}
+
+/* Active állapot (a kattintás pontos pillanata) */
+a:active {
+    color: #cd853f;
+}

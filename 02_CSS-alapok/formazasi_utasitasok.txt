@@ -1,0 +1,45 @@
+Feladatleírás: CSS stílusok beállítása
+
+1. Globális beállítások az oldal egészére (body)
+Betűtípuscsalád: Állíts be egy betűtípus-listát a következő sorrendben: 'Segoe UI', Tahoma, Geneva, Verdana, végül általános talpatlan (sans-serif) betűtípus.
+Betűméret: Legyen 11pt.
+Sorköz: Állíts be 1.6-os sorközt.
+Szövegszín: Legyen sötétszürke (#2c3e50).
+Háttérszín: Legyen halvány szürkés-zöldes (#f4f7f6).
+
+Maximális szélesség: Korlátozd az oldal szélességét maximum 800px-re.
+
+2. Címsorok formázása
+
+Főcímsor (h1):
+Betűtípuscsalád: Talpas Georgia vagy általános talpas (serif) betűtípus.
+Szövegszín: Mély erdőzöld (#1a4332).
+Betűméret: 24pt.
+Betűköz: Legyen 2px.
+
+Másodlagos címsor (h2):
+Szövegszín: Világosabb zöld (#2e6f40).
+Betűméret: 16pt.
+Felső külső margó: 30px.
+Alsó külső margó: 15px.
+
+Harmadlagos címsor (h3):
+Szövegszín: Palaszürke (#34495e).
+Betűméret: 13pt.
+Betűstílus: Legyen dőlt (italic).
+
+5. Linkek (hivatkozások) különböző állapotai
+
+Alapértelmezett és meglátogatott állapot (a:link, a:visited):
+Szövegszín: Meleg hód-barna (#a0522d).
+Szövegdekoráció: Vedd le az alapértelmezett aláhúzást (none).
+Betűvastagság: Legyen félkövér (bold).
+Alsó szegély: Kapjon egy 1px vastag, szaggatott (dashed) alsó szegélyt a szöveg színével megegyezően (#a0522d).
+
+Egérrel való rámutatás állapot (a:hover):
+Szövegszín: Váltson élénkebb barna színre (#d2691e).
+Alsó szegély: Váltson 1px vastag, folytonos (solid) vonalra a fenti élénk barna színnel (#d2691e).
+Háttérszín: Kapjon egy nagyon halvány sárgás-barna háttérkiemelést (#fef5e7).
+
+Aktív állapot / kattintás pillanata (a:active):
+Szövegszín: Váltson egy másik barna árnyalatra (#cd853f).

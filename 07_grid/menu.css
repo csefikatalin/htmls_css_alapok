@@ -1,0 +1,46 @@
+/* ==========================================
+   KIZÁRÓLAG A MENÜ LINKEK FORMÁZÁSA
+   ========================================== */
+
+/* 1. Alapértelmezett és már meglátogatott állapot */
+.menu-link:link, .menu-link:visited {
+    /* Elrendezés: inline-block segítségével egymás mellett maradnak a linkek, 
+       de már pontosan reagálnak a padding és margin beállításokra is */
+    display: inline-block;
+    
+    /* Box modell: belső margók (gomb mérete) */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    /* Box modell: külső margók (távolság egymástól és az alatta lévő címsortól) */
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    /* Szegélyek és saroklekerekítés */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1a4332;
+    border-radius: 4px;
+    
+    /* Kinézet (hogy szép, színes gomboknak tűnjenek) */
+    background-color: #1a4332;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* 2. Hover állapot (amikor az egérrel rámutatunk a menüre) */
+.menu-link:hover {
+    /* Színváltozás (világosabb zöld) az interakció jelzésére */
+    background-color: #2e6f40;
+    border-color: #2e6f40;
+    color: #ffffff;
+    
+    /* Felülírjuk az alap linkekre korábban megadott szaggatott alsó vonalat */
+    border-bottom-style: solid; 
+}

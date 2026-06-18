@@ -1,0 +1,50 @@
+Íme a menü formázásához készült megtisztított, lépésről lépésre követhető feladatleírás (segédlet). Ebből teljesen töröltem a konkrét formázási kódokat és értékeket, így kiválóan alkalmas arra, hogy a diákok vagy kezdők maguk keressék meg és állítsák be a megfelelő tulajdonságokat.
+
+Feladatleírás: Menügombok létrehozása a Box Modell segítségével
+A feladat során a menüben lévő hivatkozásokat (linkeket) kell átalakítani úgy, hogy azok ne sima aláhúzott szövegként, hanem egymás mellett elhelyezkedő, kattintható, modern gombokként jelenjenek meg. Ehhez a .menu-link osztályt kell formáznod a stíluslapon.
+
+1. Alapértelmezett és meglátogatott állapotok beállítása (a:link, a:visited)
+Ezeket a tulajdonságokat arra az állapotra alkalmazd, amikor a menüpont alaphelyzetben van, vagy amikor a felhasználó már korábban rákattintott.
+
+Megjelenési mód (Elrendezés): Módosítsd a linkek alapértelmezett viselkedését sorszintű blokkelemre. Ez a legfontosabb lépés: ez biztosítja, hogy a gombok egymás mellett maradjanak, de már pontosan reagáljanak a belső és külső margók méreteire is.
+
+Belső margók : * Állíts be egyforma felső és alsó belső margót.
+
+Állíts be egyforma, de a függőlegesnél nagyobb bal és jobb oldali belső margót.
+
+Ez a beállítás adja meg a gomb vastagságát és szélességét a benne lévő szöveg körül.
+
+Külső margók :
+
+A felső külső margót nullázd le.
+
+Az alsó külső margónak adj meg egy közepes értéket, hogy eltolja magától az alatta lévő címsort.
+
+A bal és jobb oldali külső margónak adj meg egy kis értéket. Ez biztosítja, hogy a gombok ne tapadjanak egymáshoz, hanem legyen köztük egy pici rés.
+
+Szegélyek és lekerekítés (Border):
+
+Adj a gombnak egy vékony, folytonos stílusú szegélyt, és válassz hozzá egy tetszőleges sötét színt.
+
+A gomb sarkait finoman kerekítsd le.
+
+Kinézet és szövegformázás:
+
+A gomb háttérszíne legyen ugyanaz a sötét szín, amit a szegélynél használtál.
+
+A szöveg színe legyen világos (például fehér), hogy jól olvasható legyen a sötét háttéren.
+
+Tüntesd el a linkekre jellemző alapértelmezett aláhúzást.
+
+A betűstílust állítsd félkövérre.
+
+A betűtípuscsaládot állítsd be talpatlanra .
+
+2. Egérrel való rámutatás állapota (a:hover)
+Ez a szabály akkor lép életbe, amikor a felhasználó az egér kurzorát a gomb fölé viszi. Ez jelzi vizuálisan, hogy a gomb kattintható.
+
+Háttérszín és szegély változása: Változtasd meg a gomb háttérszínét és a szegély színét is egy fokkal világosabb vagy élénkebb árnyalatra.
+
+Szövegszín: Ügyelj arra, hogy a szöveg színe ebben az állapotban is jól olvasható (például fehér) maradjon.
+
+Szegélystílus rögzítése: Határozd meg, hogy a gomb alsó szegélye hover állapotban is folytonos vonal maradjon. Ez azért szükséges, hogy ha az oldal többi részén a sima linkek hover állapotban megváltoztatnák az aláhúzásukat (pl. szaggatottá válnak), az a menügombod dobozát ne torzítsa el.
