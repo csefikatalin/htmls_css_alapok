@@ -1,11 +1,11 @@
 # HTML és CSS alapok lépésről lépésre
 
-Az alábbiakban  lépésben fogjuk felépíteni reszponzív weboldalunkat. 
+Az alábbiakban  lépésenként fogjuk felépíteni reszponzív weboldalunkat. 
 Az egyes témakörökhöz elméleti anyagot itt találsz: https://etananyag.szamalk-szalezi.hu/course/view.php?id=2278&section=1
 
 A 00_kiindulas mappában lévő fájlokból indulj ki. Itt találod lépésről lépésre a mintákat, a szövegeket és a képeket. 
 
-A megoldás: https://github.com/csefikatalin/htmls_css_alapok/tree/main/00_kiindulas
+https://github.com/csefikatalin/htmls_css_alapok/tree/main/00_kiindulas
 
 ## 1. HTML alapok
 
