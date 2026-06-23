@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  /*  az elem szélességébe beleszámít a border és a padding is */
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  background-color: beige;
+  font-size: 12px;
+}
+
+.tarolo {
+  background-color: whitesmoke;
+  padding: 20px;
+  /* szülőelem, erre kell rátenni a gridet */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.tartalom {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid brown;
+  padding: 2px;
+}
+
+/* be kell állítanunk töréspontot 500px-ra */
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    font-size: calc(12px + 2vw);
+  }
+
+  .tarolo {
+    grid-template-columns: 1fr;
+  }
+}
